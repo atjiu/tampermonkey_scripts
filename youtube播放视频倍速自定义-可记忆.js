@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         youtube播放视频倍速自定义，可记忆
 // @namespace    EsfB3XVPmbThEv39bdxQR2hzid30iMF9
-// @version      0.5
+// @version      0.6
 // @description  youtube播放视频倍速自定义，刷新浏览器也不会丢失之前设置的速度
 // @author       tomoya
 // @include      http*://*youtube.com/*
@@ -28,7 +28,7 @@
     videoSpeedElement = document.createElement("span");
     videoSpeedElement.setAttribute("id", "video_speed_div");
 
-    let speedArr = [1, 1.5, 2, 2.5, 3];
+    let speedArr = [0.25, 0.5, 0.75, 1, 1.25, 1.5, 1.75, 2, 2.5, 3];
 
     for (let i = 0; i < speedArr.length; i++) {
       let speed = speedArr[i];
